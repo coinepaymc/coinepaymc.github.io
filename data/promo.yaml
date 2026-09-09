@@ -22,7 +22,7 @@ card:
   body: "订阅 ChatGPT、Claude 等 AI 服务，投放 Facebook、Google、TikTok 广告，开通 YouTube、Netflix 等会员，以及全球跨境汇款 —— 一张卡全部搞定。支持多币种结算，实时充值，即开即用。"
   cta:
     label: "立即开卡 →"
-    url: "https://www.coinepay.net/login?referrer=7YDCLP"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
 
 # ── 板块二：联系方式 ──────────────────────────
 contact:
@@ -37,7 +37,7 @@ contact:
       url: "https://chat.ssrchat.com/service/grpect"
     - icon: "💳"
       label: "进入开卡平台"
-      url: "https://www.coinepay.net/login?referrer=7YDCLP"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
       primary: true                            # 高亮成主按钮
 
 # ── 板块三：租能量 ────────────────────────────
