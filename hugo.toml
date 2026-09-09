@@ -27,8 +27,8 @@ buildExpired = false
 [params]
   env = 'production'
   title = 'coinepaymc'
-  description = '个人技术博客'
-  keywords = ['blog', 'hugo']
+  description = '面向企业与商户的跨境收付方案：批量开卡、多币种结算、API 对接与对账管理'
+  keywords = ['企业虚拟卡', '批量开卡', 'API对接', '跨境结算', 'Coinepay']
   DateFormat = '2006-01-02'
   defaultTheme = 'auto'      # auto / light / dark
   disableThemeToggle = false
@@ -47,8 +47,29 @@ buildExpired = false
   comments = false
 
   [params.homeInfoParams]
-    Title = '你好 👋'
-    Content = '欢迎来到我的博客。'
+    Title = 'Coinepay · 企业跨境收付'
+    Content = '''
+企业的跨境支出很少只来自一个渠道——海外广告、SaaS 订阅、供应商货款、员工差旅，收款方和币种各不相同，对账往往比付款本身更费时间。
+
+我们把这几件事放在同一个后台里处理：
+
+- **批量开卡** —— 按部门、项目或投放账户分别建卡，额度独立，费用天然分开，月底不用再从流水里倒推。
+- **多币种结算** —— 美元、欧元、港币等常用币种直接结算，减少来回换汇的损耗。
+- **API 对接** —— 开卡、充值、交易查询都可以接进你自己的系统，财务流程不用人工搬运。
+- **付款记录集中管理** —— 每笔支出对应到人、到项目，进度可查，退款和调整也有迹可循。
+
+商户、广告代投团队、跨境电商是我们服务较多的类型。
+
+需要开通或想先聊聊怎么接，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[params.socialIcons]]
+    name = 'telegram'
+    url = 'https://t.me/coinepaymm'
+
+  [[params.socialIcons]]
+    name = 'whatsapp'
+    url = 'https://wa.me/message/2I3GXEELDVMHP1'
 
   [[params.socialIcons]]
     name = 'github'
