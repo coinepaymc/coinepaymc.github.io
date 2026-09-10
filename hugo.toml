@@ -1,8 +1,13 @@
 baseURL = 'https://coinepaymc.github.io/'
-languageCode = 'zh-cn'
-defaultContentLanguage = 'zh'
-title = 'coinepaymc'
 theme = 'PaperMod'
+
+# ── 多语言 ────────────────────────────────────
+# 中文在站点根目录（/posts/...），其余语言在 /<语言代码>/ 下，原有中文链接不变。
+# params.noindex = true 的语言暂不进 sitemap，页面带 noindex,follow；
+# 该语言有了文章后，删掉它的 noindex 一行即可放出。
+# params.langGroup：切换器下拉面板的分组。
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
 enableEmoji = true
@@ -18,17 +23,15 @@ buildExpired = false
   minifyOutput = true
 
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']   # JSON 供站内搜索使用
+  home = ['HTML', 'RSS', 'JSON']
 
 [taxonomies]
   category = 'categories'
   tag = 'tags'
 
+# ── 全站通用参数（会被各语言的 params 覆盖/补充）──
 [params]
   env = 'production'
-  title = 'coinepaymc'
-  description = '面向企业与商户的跨境收付方案：批量开卡、多币种结算、API 对接与对账管理'
-  keywords = ['企业虚拟卡', '批量开卡', 'API对接', '跨境结算', 'Coinepay']
   DateFormat = '2006-01-02'
   defaultTheme = 'auto'      # auto / light / dark
   disableThemeToggle = false
@@ -46,22 +49,6 @@ buildExpired = false
   hideSummary = false
   comments = false
 
-  [params.homeInfoParams]
-    Title = 'Coinepay · 企业跨境收付'
-    Content = '''
-企业的跨境支出很少只来自一个渠道——海外广告、SaaS 订阅、供应商货款、员工差旅，收款方和币种各不相同，对账往往比付款本身更费时间。
-
-我们把这几件事放在同一个后台里处理：
-
-- **批量开卡** —— 按部门、项目或投放账户分别建卡，额度独立，费用天然分开，月底不用再从流水里倒推。
-- **多币种结算** —— 美元、欧元、港币等常用币种直接结算，减少来回换汇的损耗。
-- **API 对接** —— 开卡、充值、交易查询都可以接进你自己的系统，财务流程不用人工搬运。
-- **付款记录集中管理** —— 每笔支出对应到人、到项目，进度可查，退款和调整也有迹可循。
-
-商户、广告代投团队、跨境电商是我们服务较多的类型。
-
-需要开通或想先聊聊怎么接，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
-'''
 
   [[params.socialIcons]]
     name = 'telegram'
@@ -117,6 +104,919 @@ buildExpired = false
   name = '搜索'
   url = '/search/'
   weight = 50
+
+# ══ 简体中文 (zh) · 东亚 ══════════════════════════════
+[languages.zh]
+  locale = "zh-CN"
+  label = "简体中文"
+  contentDir = 'content/zh'
+  weight = 1
+  title = "coinepaymc"
+
+  [languages.zh.params]
+    description = "面向企业与商户的跨境收付方案：批量开卡、多币种结算、API 对接与对账管理"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "ea"
+
+    [languages.zh.params.homeInfoParams]
+      Title = "Coinepay · 企业跨境收付"
+      Content = '''
+企业的跨境支出很少只来自一个渠道——海外广告、SaaS 订阅、供应商货款、员工差旅，收款方和币种各不相同，对账往往比付款本身更费时间。
+
+我们把这几件事放在同一个后台里处理：
+
+- **批量开卡** —— 按部门、项目或投放账户分别建卡，额度独立，费用天然分开，月底不用再从流水里倒推。
+- **多币种结算** —— 美元、欧元、港币等常用币种直接结算，减少来回换汇的损耗。
+- **API 对接** —— 开卡、充值、交易查询都可以接进你自己的系统，财务流程不用人工搬运。
+- **付款记录集中管理** —— 每笔支出对应到人、到项目，进度可查，退款和调整也有迹可循。
+
+商户、广告代投团队、跨境电商是我们服务较多的类型。
+
+需要开通或想先聊聊怎么接，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.zh.menu.main]]
+    identifier = 'posts'
+    name = "文章"
+    url = '/posts/'
+    weight = 10
+  [[languages.zh.menu.main]]
+    identifier = 'archives'
+    name = "归档"
+    url = '/archives/'
+    weight = 20
+  [[languages.zh.menu.main]]
+    identifier = 'categories'
+    name = "分类"
+    url = '/categories/'
+    weight = 30
+  [[languages.zh.menu.main]]
+    identifier = 'tags'
+    name = "标签"
+    url = '/tags/'
+    weight = 40
+  [[languages.zh.menu.main]]
+    identifier = 'search'
+    name = "搜索"
+    url = '/search/'
+    weight = 50
+
+# ══ English (en) · 欧洲与美洲 ════════════════════════
+[languages.en]
+  locale = "en"
+  label = "English"
+  contentDir = 'content/en'
+  weight = 2
+  title = "coinepaymc"
+
+  [languages.en.params]
+    description = "Coinepay · Cross-Border Payments and Collections for Business"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.en.params.homeInfoParams]
+      Title = "Coinepay · Cross-Border Payments and Collections for Business"
+      Content = '''
+Corporate spending abroad rarely comes from one place. Overseas advertising, SaaS subscriptions, supplier invoices, staff travel — different payees, different currencies, and reconciliation that routinely takes longer than the payments themselves.
+
+We handle all of it from one back office:
+
+- **Bulk card issuance** —— Issue separate cards by department, project or ad account. Limits are independent and costs separate themselves, so month-end no longer means reverse-engineering a statement.
+- **Multi-currency settlement** —— Settle directly in USD, EUR, HKD and other common currencies, cutting the losses from converting back and forth.
+- **API integration** —— Card issuance, top-ups and transaction lookups can all be wired into your own systems, so finance stops moving data by hand.
+- **Payments in one ledger** —— Every expense maps to a person and a project, progress is visible, and refunds and adjustments leave a trail.
+
+Merchants, media-buying teams and cross-border e-commerce make up most of who we work with.
+
+To get set up, or just to talk through how the integration would work，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.en.menu.main]]
+    identifier = 'posts'
+    name = "Posts"
+    url = '/posts/'
+    weight = 10
+  [[languages.en.menu.main]]
+    identifier = 'archives'
+    name = "Archives"
+    url = '/archives/'
+    weight = 20
+  [[languages.en.menu.main]]
+    identifier = 'categories'
+    name = "Categories"
+    url = '/categories/'
+    weight = 30
+  [[languages.en.menu.main]]
+    identifier = 'tags'
+    name = "Tags"
+    url = '/tags/'
+    weight = 40
+  [[languages.en.menu.main]]
+    identifier = 'search'
+    name = "Search"
+    url = '/search/'
+    weight = 50
+
+# ══ Español (es) · 欧洲与美洲 ════════════════════════
+[languages.es]
+  locale = "es"
+  label = "Español"
+  contentDir = 'content/es'
+  weight = 3
+  title = "coinepaymc"
+
+  [languages.es.params]
+    description = "Coinepay · Cobros y pagos transfronterizos para empresas"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.es.params.homeInfoParams]
+      Title = "Coinepay · Cobros y pagos transfronterizos para empresas"
+      Content = '''
+El gasto internacional de una empresa rara vez viene de un solo canal. Publicidad en el extranjero, suscripciones SaaS, facturas de proveedores, viajes del equipo: distintos beneficiarios, distintas divisas y una conciliación que suele llevar más tiempo que el propio pago.
+
+Reunimos todo eso en un mismo panel:
+
+- **Emisión masiva de tarjetas** —— Crea tarjetas separadas por departamento, proyecto o cuenta publicitaria. Los límites son independientes y los costes se separan solos, de modo que el cierre de mes deja de ser una reconstrucción a partir del extracto.
+- **Liquidación multidivisa** —— Liquida directamente en dólares, euros, dólares de Hong Kong y otras divisas habituales, reduciendo las pérdidas por cambios de ida y vuelta.
+- **Integración por API** —— La emisión, las recargas y las consultas de transacciones pueden conectarse a tus propios sistemas, para que el equipo financiero deje de mover datos a mano.
+- **Registro de pagos centralizado** —— Cada gasto queda asociado a una persona y a un proyecto, el estado es consultable, y las devoluciones y ajustes dejan rastro.
+
+Comercios, equipos de compra de medios y comercio electrónico transfronterizo son el tipo de cliente con el que más trabajamos.
+
+Para darte de alta o simplemente comentar cómo sería la integración，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.es.menu.main]]
+    identifier = 'posts'
+    name = "Artículos"
+    url = '/posts/'
+    weight = 10
+  [[languages.es.menu.main]]
+    identifier = 'archives'
+    name = "Archivo"
+    url = '/archives/'
+    weight = 20
+  [[languages.es.menu.main]]
+    identifier = 'categories'
+    name = "Categorías"
+    url = '/categories/'
+    weight = 30
+  [[languages.es.menu.main]]
+    identifier = 'tags'
+    name = "Etiquetas"
+    url = '/tags/'
+    weight = 40
+  [[languages.es.menu.main]]
+    identifier = 'search'
+    name = "Buscar"
+    url = '/search/'
+    weight = 50
+
+# ══ Français (fr) · 欧洲与美洲 ═══════════════════════
+[languages.fr]
+  locale = "fr"
+  label = "Français"
+  contentDir = 'content/fr'
+  weight = 4
+  title = "coinepaymc"
+
+  [languages.fr.params]
+    description = "Coinepay · Encaissements et paiements internationaux pour les entreprises"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.fr.params.homeInfoParams]
+      Title = "Coinepay · Encaissements et paiements internationaux pour les entreprises"
+      Content = '''
+Les dépenses internationales d’une entreprise viennent rarement d’un seul canal. Publicité à l’étranger, abonnements SaaS, factures fournisseurs, déplacements des équipes : des bénéficiaires et des devises différents, et un rapprochement qui prend souvent plus de temps que le paiement lui-même.
+
+Nous regroupons tout cela dans une même interface :
+
+- **Émission de cartes en masse** —— Créez des cartes distinctes par service, par projet ou par compte publicitaire. Les plafonds sont indépendants et les dépenses se séparent d’elles-mêmes : la clôture mensuelle cesse d’être une reconstitution à partir des relevés.
+- **Règlement multidevise** —— Réglez directement en dollars, en euros, en dollars de Hong Kong et dans les autres devises courantes, en limitant les pertes de change aller-retour.
+- **Intégration par API** —— Émission, recharges et consultation des transactions peuvent être raccordées à vos propres systèmes, pour que la comptabilité cesse de déplacer les données à la main.
+- **Historique des paiements centralisé** —— Chaque dépense est rattachée à une personne et à un projet, l’avancement est consultable, et les remboursements comme les ajustements laissent une trace.
+
+Marchands, équipes d’achat média et e-commerce transfrontalier constituent l’essentiel de nos clients.
+
+Pour ouvrir un compte ou simplement discuter de l’intégration，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.fr.menu.main]]
+    identifier = 'posts'
+    name = "Articles"
+    url = '/posts/'
+    weight = 10
+  [[languages.fr.menu.main]]
+    identifier = 'archives'
+    name = "Archives"
+    url = '/archives/'
+    weight = 20
+  [[languages.fr.menu.main]]
+    identifier = 'categories'
+    name = "Catégories"
+    url = '/categories/'
+    weight = 30
+  [[languages.fr.menu.main]]
+    identifier = 'tags'
+    name = "Étiquettes"
+    url = '/tags/'
+    weight = 40
+  [[languages.fr.menu.main]]
+    identifier = 'search'
+    name = "Recherche"
+    url = '/search/'
+    weight = 50
+
+# ══ Português (pt) · 欧洲与美洲 ══════════════════════
+[languages.pt]
+  locale = "pt"
+  label = "Português"
+  contentDir = 'content/pt'
+  weight = 5
+  title = "coinepaymc"
+
+  [languages.pt.params]
+    description = "Coinepay · Pagamentos e recebimentos internacionais para empresas"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.pt.params.homeInfoParams]
+      Title = "Coinepay · Pagamentos e recebimentos internacionais para empresas"
+      Content = '''
+O gasto internacional de uma empresa raramente vem de um só canal. Publicidade no exterior, assinaturas SaaS, faturas de fornecedores, viagens da equipe: beneficiários e moedas diferentes, e uma conciliação que costuma levar mais tempo do que o próprio pagamento.
+
+Reunimos tudo isso em um mesmo painel:
+
+- **Emissão de cartões em massa** —— Crie cartões separados por departamento, projeto ou conta de anúncios. Os limites são independentes e os custos se separam sozinhos, então o fechamento do mês deixa de ser uma reconstrução a partir do extrato.
+- **Liquidação multimoeda** —— Liquide diretamente em dólar, euro, dólar de Hong Kong e outras moedas comuns, reduzindo as perdas de câmbio de ida e volta.
+- **Integração por API** —— Emissão, recargas e consultas de transações podem ser conectadas aos seus próprios sistemas, para o financeiro parar de mover dados na mão.
+- **Registro de pagamentos centralizado** —— Cada despesa corresponde a uma pessoa e a um projeto, o andamento é consultável, e estornos e ajustes deixam rastro.
+
+Comerciantes, equipes de mídia paga e e-commerce transfronteiriço são o perfil com que mais trabalhamos.
+
+Para abrir conta ou apenas conversar sobre como seria a integração，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.pt.menu.main]]
+    identifier = 'posts'
+    name = "Artigos"
+    url = '/posts/'
+    weight = 10
+  [[languages.pt.menu.main]]
+    identifier = 'archives'
+    name = "Arquivo"
+    url = '/archives/'
+    weight = 20
+  [[languages.pt.menu.main]]
+    identifier = 'categories'
+    name = "Categorias"
+    url = '/categories/'
+    weight = 30
+  [[languages.pt.menu.main]]
+    identifier = 'tags'
+    name = "Tags"
+    url = '/tags/'
+    weight = 40
+  [[languages.pt.menu.main]]
+    identifier = 'search'
+    name = "Buscar"
+    url = '/search/'
+    weight = 50
+
+# ══ Polski (pl) · 欧洲与美洲 ═════════════════════════
+[languages.pl]
+  locale = "pl"
+  label = "Polski"
+  contentDir = 'content/pl'
+  weight = 6
+  title = "coinepaymc"
+
+  [languages.pl.params]
+    description = "Coinepay · Płatności i wpływy transgraniczne dla firm"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.pl.params.homeInfoParams]
+      Title = "Coinepay · Płatności i wpływy transgraniczne dla firm"
+      Content = '''
+Wydatki zagraniczne firmy rzadko pochodzą z jednego kanału. Reklama za granicą, subskrypcje SaaS, faktury od dostawców, podróże zespołu — różni odbiorcy, różne waluty, a uzgadnianie zajmuje zwykle więcej czasu niż sama płatność.
+
+Zbieramy to wszystko w jednym panelu:
+
+- **Masowe wydawanie kart** —— Wydawaj osobne karty dla działów, projektów lub kont reklamowych. Limity są niezależne, a koszty rozdzielają się same, więc zamknięcie miesiąca przestaje być odtwarzaniem historii z wyciągu.
+- **Rozliczenia wielowalutowe** —— Rozliczaj bezpośrednio w dolarach, euro, dolarach hongkońskich i innych popularnych walutach, ograniczając straty na przewalutowaniach.
+- **Integracja przez API** —— Wydawanie kart, doładowania i podgląd transakcji można wpiąć we własne systemy, żeby finanse przestały przenosić dane ręcznie.
+- **Płatności w jednym rejestrze** —— Każdy wydatek przypisany do osoby i projektu, status widoczny, a zwroty i korekty zostawiają ślad.
+
+Najczęściej pracujemy ze sprzedawcami, zespołami zakupu mediów i e-commerce transgranicznym.
+
+Aby założyć konto albo po prostu porozmawiać o integracji，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.pl.menu.main]]
+    identifier = 'posts'
+    name = "Artykuły"
+    url = '/posts/'
+    weight = 10
+  [[languages.pl.menu.main]]
+    identifier = 'archives'
+    name = "Archiwum"
+    url = '/archives/'
+    weight = 20
+  [[languages.pl.menu.main]]
+    identifier = 'categories'
+    name = "Kategorie"
+    url = '/categories/'
+    weight = 30
+  [[languages.pl.menu.main]]
+    identifier = 'tags'
+    name = "Tagi"
+    url = '/tags/'
+    weight = 40
+  [[languages.pl.menu.main]]
+    identifier = 'search'
+    name = "Szukaj"
+    url = '/search/'
+    weight = 50
+
+# ══ Română (ro) · 欧洲与美洲 ═════════════════════════
+[languages.ro]
+  locale = "ro"
+  label = "Română"
+  contentDir = 'content/ro'
+  weight = 7
+  title = "coinepaymc"
+
+  [languages.ro.params]
+    description = "Coinepay · Plăți și încasări transfrontaliere pentru companii"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ro.params.homeInfoParams]
+      Title = "Coinepay · Plăți și încasări transfrontaliere pentru companii"
+      Content = '''
+Cheltuielile externe ale unei companii rareori vin dintr-un singur canal. Publicitate în străinătate, abonamente SaaS, facturi de la furnizori, deplasări ale echipei: beneficiari și valute diferite, iar reconcilierea durează de obicei mai mult decât plata în sine.
+
+Le aducem pe toate în același panou:
+
+- **Emitere de carduri în masă** —— Emite carduri separate pe departament, proiect sau cont de publicitate. Limitele sunt independente, iar costurile se separă singure, așa că închiderea de lună nu mai înseamnă reconstituire din extras.
+- **Decontare multivalutară** —— Decontează direct în dolari, euro, dolari din Hong Kong și alte valute uzuale, reducând pierderile din schimburile dus-întors.
+- **Integrare prin API** —— Emiterea, alimentările și interogările de tranzacții pot fi conectate la sistemele tale, ca departamentul financiar să nu mai mute date manual.
+- **Evidența plăților într-un singur loc** —— Fiecare cheltuială corespunde unei persoane și unui proiect, stadiul se poate verifica, iar rambursările și ajustările lasă urmă.
+
+Comercianții, echipele de media buying și comerțul electronic transfrontalier sunt tipurile de clienți cu care lucrăm cel mai des.
+
+Pentru deschiderea contului sau doar ca să discutăm cum ar arăta integrarea，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ro.menu.main]]
+    identifier = 'posts'
+    name = "Articole"
+    url = '/posts/'
+    weight = 10
+  [[languages.ro.menu.main]]
+    identifier = 'archives'
+    name = "Arhivă"
+    url = '/archives/'
+    weight = 20
+  [[languages.ro.menu.main]]
+    identifier = 'categories'
+    name = "Categorii"
+    url = '/categories/'
+    weight = 30
+  [[languages.ro.menu.main]]
+    identifier = 'tags'
+    name = "Etichete"
+    url = '/tags/'
+    weight = 40
+  [[languages.ro.menu.main]]
+    identifier = 'search'
+    name = "Căutare"
+    url = '/search/'
+    weight = 50
+
+# ══ Türkçe (tr) · 中东 ════════════════════════════
+[languages.tr]
+  locale = "tr"
+  label = "Türkçe"
+  contentDir = 'content/tr'
+  weight = 8
+  title = "coinepaymc"
+
+  [languages.tr.params]
+    description = "Coinepay · İşletmeler için sınır ötesi tahsilat ve ödeme"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "me"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.tr.params.homeInfoParams]
+      Title = "Coinepay · İşletmeler için sınır ötesi tahsilat ve ödeme"
+      Content = '''
+Bir şirketin yurt dışı harcamaları nadiren tek bir kanaldan gelir. Yurt dışı reklamları, SaaS abonelikleri, tedarikçi faturaları, personel seyahatleri —— alıcılar ve para birimleri farklıdır, mutabakat çoğu zaman ödemenin kendisinden daha uzun sürer.
+
+Bunların hepsini tek bir panelde topluyoruz:
+
+- **Toplu kart basımı** —— Departman, proje veya reklam hesabı bazında ayrı kartlar çıkarın. Limitler bağımsızdır ve maliyetler kendiliğinden ayrışır; ay sonu artık ekstreden geriye doğru iz sürmek anlamına gelmez.
+- **Çoklu para birimiyle mutabakat** —— Dolar, euro, Hong Kong doları ve diğer yaygın para birimlerinde doğrudan mutabakat yapın, gidip gelen kur dönüşümlerindeki kaybı azaltın.
+- **API entegrasyonu** —— Kart basımı, yükleme ve işlem sorgulama kendi sistemlerinize bağlanabilir; finans ekibi verileri elle taşımaktan kurtulur.
+- **Ödeme kayıtları tek yerde** —— Her harcama bir kişiye ve bir projeye karşılık gelir, durum sorgulanabilir, iade ve düzeltmeler iz bırakır.
+
+En çok çalıştığımız kesim işletmeler, medya satın alma ekipleri ve sınır ötesi e-ticaret.
+
+Hesap açmak ya da entegrasyonun nasıl olacağını konuşmak için，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.tr.menu.main]]
+    identifier = 'posts'
+    name = "Yazılar"
+    url = '/posts/'
+    weight = 10
+  [[languages.tr.menu.main]]
+    identifier = 'archives'
+    name = "Arşiv"
+    url = '/archives/'
+    weight = 20
+  [[languages.tr.menu.main]]
+    identifier = 'categories'
+    name = "Kategoriler"
+    url = '/categories/'
+    weight = 30
+  [[languages.tr.menu.main]]
+    identifier = 'tags'
+    name = "Etiketler"
+    url = '/tags/'
+    weight = 40
+  [[languages.tr.menu.main]]
+    identifier = 'search'
+    name = "Ara"
+    url = '/search/'
+    weight = 50
+
+# ══ 日本語 (ja) · 东亚 ═══════════════════════════════
+[languages.ja]
+  locale = "ja"
+  label = "日本語"
+  contentDir = 'content/ja'
+  weight = 9
+  title = "coinepaymc"
+
+  [languages.ja.params]
+    description = "Coinepay · 法人向けクロスボーダー入出金"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "ea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ja.params.homeInfoParams]
+      Title = "Coinepay · 法人向けクロスボーダー入出金"
+      Content = '''
+企業の海外支出が一つの経路だけから生じることはほとんどありません。海外広告、SaaS の契約、仕入先への支払い、社員の出張 —— 受取先も通貨もばらばらで、消込のほうが支払いそのものより時間を取られることも珍しくありません。
+
+これらを一つの管理画面にまとめています。
+
+- **カードの一括発行** —— 部門ごと、プロジェクトごと、広告アカウントごとにカードを分けて発行できます。限度額は独立し、費用は自然に分かれるため、月末に明細から遡って割り出す必要がなくなります。
+- **多通貨決済** —— 米ドル、ユーロ、香港ドルなど主要通貨で直接決済でき、両替を往復することによる目減りを抑えられます。
+- **API 連携** —— カード発行、チャージ、取引照会をそのまま自社システムに接続できるため、経理が手作業でデータを動かす必要がなくなります。
+- **支払い記録の一元管理** —— 支出ごとに担当者とプロジェクトが紐づき、進捗を確認でき、返金や調整の履歴も残ります。
+
+加盟店、広告運用代行チーム、越境 EC のご利用が多くなっています。
+
+お申し込み、あるいは連携方法のご相談は，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ja.menu.main]]
+    identifier = 'posts'
+    name = "記事"
+    url = '/posts/'
+    weight = 10
+  [[languages.ja.menu.main]]
+    identifier = 'archives'
+    name = "アーカイブ"
+    url = '/archives/'
+    weight = 20
+  [[languages.ja.menu.main]]
+    identifier = 'categories'
+    name = "カテゴリー"
+    url = '/categories/'
+    weight = 30
+  [[languages.ja.menu.main]]
+    identifier = 'tags'
+    name = "タグ"
+    url = '/tags/'
+    weight = 40
+  [[languages.ja.menu.main]]
+    identifier = 'search'
+    name = "検索"
+    url = '/search/'
+    weight = 50
+
+# ══ 한국어 (ko) · 东亚 ═══════════════════════════════
+[languages.ko]
+  locale = "ko"
+  label = "한국어"
+  contentDir = 'content/ko'
+  weight = 10
+  title = "coinepaymc"
+
+  [languages.ko.params]
+    description = "Coinepay · 기업용 국경 간 수납과 지급"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "ea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ko.params.homeInfoParams]
+      Title = "Coinepay · 기업용 국경 간 수납과 지급"
+      Content = '''
+기업의 해외 지출이 한 가지 경로에서만 나오는 경우는 드뭅니다. 해외 광고, SaaS 구독, 공급업체 대금, 임직원 출장 —— 수취인도 통화도 제각각이고, 대사 작업이 결제 자체보다 오래 걸리는 일이 흔합니다.
+
+이 모든 것을 하나의 관리 화면에서 처리합니다.
+
+- **카드 대량 발급** —— 부서별, 프로젝트별, 광고 계정별로 카드를 나눠 발급할 수 있습니다. 한도가 독립적이고 비용이 자연스럽게 분리되므로, 월말에 명세서를 거슬러 올라가며 추적할 필요가 없습니다.
+- **다중 통화 정산** —— 미국 달러, 유로, 홍콩 달러 등 주요 통화로 직접 정산해 왕복 환전에서 생기는 손실을 줄입니다.
+- **API 연동** —— 카드 발급, 충전, 거래 조회를 자체 시스템에 그대로 연결할 수 있어 재무팀이 데이터를 손으로 옮기지 않아도 됩니다.
+- **결제 기록 일원화** —— 모든 지출이 담당자와 프로젝트에 연결되고, 진행 상태를 조회할 수 있으며, 환불과 조정도 기록으로 남습니다.
+
+가맹점, 광고 대행 팀, 국경 간 전자상거래 업체가 저희와 가장 많이 일하는 유형입니다.
+
+개설을 원하시거나 연동 방식을 먼저 상의하고 싶으시면，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ko.menu.main]]
+    identifier = 'posts'
+    name = "게시글"
+    url = '/posts/'
+    weight = 10
+  [[languages.ko.menu.main]]
+    identifier = 'archives'
+    name = "아카이브"
+    url = '/archives/'
+    weight = 20
+  [[languages.ko.menu.main]]
+    identifier = 'categories'
+    name = "카테고리"
+    url = '/categories/'
+    weight = 30
+  [[languages.ko.menu.main]]
+    identifier = 'tags'
+    name = "태그"
+    url = '/tags/'
+    weight = 40
+  [[languages.ko.menu.main]]
+    identifier = 'search'
+    name = "검색"
+    url = '/search/'
+    weight = 50
+
+# ══ हिन्दी (hi) · 南亚 ════════════════════════════
+[languages.hi]
+  locale = "hi"
+  label = "हिन्दी"
+  contentDir = 'content/hi'
+  weight = 11
+  title = "coinepaymc"
+
+  [languages.hi.params]
+    description = "Coinepay · व्यवसायों के लिए सीमा-पार भुगतान और प्राप्ति"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "sa"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.hi.params.homeInfoParams]
+      Title = "Coinepay · व्यवसायों के लिए सीमा-पार भुगतान और प्राप्ति"
+      Content = '''
+किसी कंपनी का विदेशी खर्च शायद ही कभी एक ही स्रोत से आता है। विदेशी विज्ञापन, SaaS सदस्यताएँ, आपूर्तिकर्ताओं के चालान, कर्मचारियों की यात्रा — प्राप्तकर्ता और मुद्राएँ अलग-अलग होती हैं, और मिलान अक्सर भुगतान से भी ज़्यादा समय ले लेता है।
+
+हम इन सबको एक ही बैक-ऑफ़िस में संभालते हैं:
+
+- **थोक में कार्ड जारी करना** —— विभाग, प्रोजेक्ट या विज्ञापन खाते के हिसाब से अलग-अलग कार्ड बनाएँ। सीमाएँ स्वतंत्र रहती हैं और खर्च अपने आप अलग हो जाते हैं, इसलिए महीने के अंत में विवरण से पीछे जाकर हिसाब लगाने की ज़रूरत नहीं रहती।
+- **बहु-मुद्रा निपटान** —— डॉलर, यूरो, हांगकांग डॉलर और अन्य प्रचलित मुद्राओं में सीधे निपटान करें, जिससे बार-बार मुद्रा बदलने का नुकसान घटता है।
+- **API एकीकरण** —— कार्ड जारी करना, टॉप-अप और लेनदेन की जाँच सब कुछ आपके अपने सिस्टम से जोड़ा जा सकता है, ताकि वित्त टीम को डेटा हाथ से न ढोना पड़े।
+- **भुगतान रिकॉर्ड एक ही जगह** —— हर खर्च किसी व्यक्ति और किसी प्रोजेक्ट से जुड़ा रहता है, स्थिति देखी जा सकती है, और रिफ़ंड व समायोजन का भी रिकॉर्ड बनता है।
+
+व्यापारी, मीडिया-बाइंग टीमें और सीमा-पार ई-कॉमर्स — हम सबसे ज़्यादा इन्हीं के साथ काम करते हैं।
+
+खाता खोलने के लिए या पहले यह समझने के लिए कि एकीकरण कैसे होगा，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.hi.menu.main]]
+    identifier = 'posts'
+    name = "लेख"
+    url = '/posts/'
+    weight = 10
+  [[languages.hi.menu.main]]
+    identifier = 'archives'
+    name = "संग्रह"
+    url = '/archives/'
+    weight = 20
+  [[languages.hi.menu.main]]
+    identifier = 'categories'
+    name = "श्रेणियाँ"
+    url = '/categories/'
+    weight = 30
+  [[languages.hi.menu.main]]
+    identifier = 'tags'
+    name = "टैग"
+    url = '/tags/'
+    weight = 40
+  [[languages.hi.menu.main]]
+    identifier = 'search'
+    name = "खोज"
+    url = '/search/'
+    weight = 50
+
+# ══ বাংলা (bn) · 南亚 ═════════════════════════════
+[languages.bn]
+  locale = "bn"
+  label = "বাংলা"
+  contentDir = 'content/bn'
+  weight = 12
+  title = "coinepaymc"
+
+  [languages.bn.params]
+    description = "Coinepay · ব্যবসার জন্য সীমান্ত পার লেনদেন ও সংগ্রহ"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "sa"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.bn.params.homeInfoParams]
+      Title = "Coinepay · ব্যবসার জন্য সীমান্ত পার লেনদেন ও সংগ্রহ"
+      Content = '''
+কোনও প্রতিষ্ঠানের বিদেশি খরচ খুব কমই একটিমাত্র উৎস থেকে আসে। বিদেশি বিজ্ঞাপন, SaaS সাবস্ক্রিপশন, সরবরাহকারীর চালান, কর্মীদের ভ্রমণ — প্রাপক ও মুদ্রা আলাদা, আর মিলকরণে প্রায়ই পেমেন্টের চেয়ে বেশি সময় লাগে।
+
+আমরা এই সবকিছু একই ব্যাক-অফিসে সামলাই:
+
+- **বাল্ক কার্ড ইস্যু** —— বিভাগ, প্রকল্প বা বিজ্ঞাপন অ্যাকাউন্ট অনুযায়ী আলাদা কার্ড ইস্যু করুন। সীমা স্বাধীন থাকে এবং খরচ নিজে থেকেই আলাদা হয়ে যায়, তাই মাস শেষে বিবরণী ঘেঁটে পেছনের হিসাব মেলাতে হয় না।
+- **বহু-মুদ্রায় নিষ্পত্তি** —— ডলার, ইউরো, হংকং ডলার ও অন্যান্য প্রচলিত মুদ্রায় সরাসরি নিষ্পত্তি করুন, বারবার মুদ্রা বদলানোর ক্ষতি কমান।
+- **API সংযোগ** —— কার্ড ইস্যু, টপ-আপ ও লেনদেন অনুসন্ধান সবই আপনার নিজস্ব সিস্টেমে যুক্ত করা যায়, যাতে হিসাব বিভাগকে হাতে ডেটা সরাতে না হয়।
+- **পেমেন্টের রেকর্ড এক জায়গায়** —— প্রতিটি খরচ একজন ব্যক্তি ও একটি প্রকল্পের সঙ্গে যুক্ত থাকে, অগ্রগতি দেখা যায়, আর ফেরত ও সমন্বয়েরও রেকর্ড থাকে।
+
+ব্যবসায়ী, মিডিয়া-বায়িং টিম ও সীমান্ত পার ই-কমার্স — এদের সঙ্গেই আমরা সবচেয়ে বেশি কাজ করি।
+
+অ্যাকাউন্ট খুলতে চাইলে বা আগে সংযোগের পদ্ধতি নিয়ে কথা বলতে চাইলে，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.bn.menu.main]]
+    identifier = 'posts'
+    name = "নিবন্ধ"
+    url = '/posts/'
+    weight = 10
+  [[languages.bn.menu.main]]
+    identifier = 'archives'
+    name = "আর্কাইভ"
+    url = '/archives/'
+    weight = 20
+  [[languages.bn.menu.main]]
+    identifier = 'categories'
+    name = "বিভাগ"
+    url = '/categories/'
+    weight = 30
+  [[languages.bn.menu.main]]
+    identifier = 'tags'
+    name = "ট্যাগ"
+    url = '/tags/'
+    weight = 40
+  [[languages.bn.menu.main]]
+    identifier = 'search'
+    name = "অনুসন্ধান"
+    url = '/search/'
+    weight = 50
+
+# ══ اردو (ur) · 南亚 ══════════════════════════════
+[languages.ur]
+  locale = "ur"
+  label = "اردو"
+  direction = 'rtl'
+  contentDir = 'content/ur'
+  weight = 13
+  title = "coinepaymc"
+
+  [languages.ur.params]
+    description = "Coinepay · کاروبار کے لیے سرحد پار ادائیگی اور وصولی"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "sa"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ur.params.homeInfoParams]
+      Title = "Coinepay · کاروبار کے لیے سرحد پار ادائیگی اور وصولی"
+      Content = '''
+کسی کمپنی کے بیرونِ ملک اخراجات شاذ و نادر ہی ایک ہی ذریعے سے آتے ہیں۔ بیرونِ ملک اشتہارات، SaaS سبسکرپشنز، سپلائرز کے بل، عملے کے سفر —— وصول کنندگان اور کرنسیاں مختلف ہوتی ہیں، اور مطابقت کا کام اکثر ادائیگی سے بھی زیادہ وقت لے لیتا ہے۔
+
+ہم یہ سب ایک ہی بیک آفس میں سنبھالتے ہیں:
+
+- **بڑی تعداد میں کارڈ کا اجرا** —— شعبے، منصوبے یا اشتہاری اکاؤنٹ کے لحاظ سے الگ الگ کارڈ جاری کریں۔ حدود آزاد رہتی ہیں اور اخراجات خودبخود الگ ہو جاتے ہیں، چنانچہ مہینے کے آخر میں گوشوارے سے پیچھے جا کر حساب لگانے کی ضرورت نہیں رہتی۔
+- **متعدد کرنسیوں میں تصفیہ** —— ڈالر، یورو، ہانگ کانگ ڈالر اور دیگر عام کرنسیوں میں براہِ راست تصفیہ کریں، بار بار کرنسی بدلنے کے نقصان سے بچیں۔
+- **API انضمام** —— کارڈ کا اجرا، ٹاپ اپ اور لین دین کی جانچ سب کچھ آپ کے اپنے نظام سے منسلک ہو سکتا ہے، تاکہ مالیاتی ٹیم کو ڈیٹا ہاتھ سے منتقل نہ کرنا پڑے۔
+- **ادائیگیوں کا ریکارڈ ایک جگہ** —— ہر خرچ کسی فرد اور کسی منصوبے سے جڑا رہتا ہے، پیش رفت دیکھی جا سکتی ہے، اور رقم کی واپسی و ترامیم کا بھی نشان باقی رہتا ہے۔
+
+تاجر، میڈیا بائنگ ٹیمیں اور سرحد پار ای کامرس —— ہم زیادہ تر انہی کے ساتھ کام کرتے ہیں۔
+
+اکاؤنٹ کھلوانے کے لیے یا پہلے یہ سمجھنے کے لیے کہ انضمام کیسے ہوگا，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ur.menu.main]]
+    identifier = 'posts'
+    name = "مضامین"
+    url = '/posts/'
+    weight = 10
+  [[languages.ur.menu.main]]
+    identifier = 'archives'
+    name = "آرکائیو"
+    url = '/archives/'
+    weight = 20
+  [[languages.ur.menu.main]]
+    identifier = 'categories'
+    name = "زمرہ جات"
+    url = '/categories/'
+    weight = 30
+  [[languages.ur.menu.main]]
+    identifier = 'tags'
+    name = "ٹیگز"
+    url = '/tags/'
+    weight = 40
+  [[languages.ur.menu.main]]
+    identifier = 'search'
+    name = "تلاش"
+    url = '/search/'
+    weight = 50
+
+# ══ العربية (ar) · 中东 ═══════════════════════════
+[languages.ar]
+  locale = "ar"
+  label = "العربية"
+  direction = 'rtl'
+  contentDir = 'content/ar'
+  weight = 14
+  title = "coinepaymc"
+
+  [languages.ar.params]
+    description = "Coinepay · المدفوعات والتحصيلات العابرة للحدود للشركات"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "me"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ar.params.homeInfoParams]
+      Title = "Coinepay · المدفوعات والتحصيلات العابرة للحدود للشركات"
+      Content = '''
+نادرًا ما تأتي نفقات الشركة الخارجية من قناة واحدة. إعلانات خارجية، واشتراكات SaaS، وفواتير مورِّدين، وسفر موظفين —— جهات استلام وعملات مختلفة، وتسوية تستغرق عادةً وقتًا أطول من الدفع نفسه.
+
+نتولى ذلك كله من لوحة إدارة واحدة:
+
+- **إصدار البطاقات بالجملة** —— أصدر بطاقات منفصلة حسب القسم أو المشروع أو الحساب الإعلاني. الحدود مستقلة والتكاليف تنفصل من تلقاء نفسها، فلم يعد إقفال الشهر يعني تتبّع كشف الحساب رجوعًا إلى الوراء.
+- **التسوية بعملات متعددة** —— سوِّ مباشرة بالدولار واليورو ودولار هونغ كونغ وغيرها من العملات الشائعة، مع تقليل خسائر الصرف ذهابًا وإيابًا.
+- **التكامل عبر الواجهة البرمجية** —— يمكن ربط إصدار البطاقات والشحن والاستعلام عن المعاملات بأنظمتك الخاصة، فيتوقف قسم المالية عن نقل البيانات يدويًا.
+- **سجل المدفوعات في مكان واحد** —— كل مصروف مرتبط بشخص وبمشروع، ويمكن متابعة حالته، وتترك المبالغ المستردة والتعديلات أثرًا واضحًا.
+
+التجار وفرق شراء الوسائط والتجارة الإلكترونية العابرة للحدود هم أكثر من نتعامل معهم.
+
+لفتح حساب أو لمناقشة طريقة التكامل أولًا，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ar.menu.main]]
+    identifier = 'posts'
+    name = "المقالات"
+    url = '/posts/'
+    weight = 10
+  [[languages.ar.menu.main]]
+    identifier = 'archives'
+    name = "الأرشيف"
+    url = '/archives/'
+    weight = 20
+  [[languages.ar.menu.main]]
+    identifier = 'categories'
+    name = "التصنيفات"
+    url = '/categories/'
+    weight = 30
+  [[languages.ar.menu.main]]
+    identifier = 'tags'
+    name = "الوسوم"
+    url = '/tags/'
+    weight = 40
+  [[languages.ar.menu.main]]
+    identifier = 'search'
+    name = "بحث"
+    url = '/search/'
+    weight = 50
+
+# ══ ไทย (th) · 东南亚 ══════════════════════════════
+[languages.th]
+  locale = "th"
+  label = "ไทย"
+  contentDir = 'content/th'
+  weight = 15
+  title = "coinepaymc"
+
+  [languages.th.params]
+    description = "Coinepay · การรับและจ่ายเงินข้ามพรมแดนสำหรับองค์กร"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "sea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.th.params.homeInfoParams]
+      Title = "Coinepay · การรับและจ่ายเงินข้ามพรมแดนสำหรับองค์กร"
+      Content = '''
+ค่าใช้จ่ายต่างประเทศขององค์กรแทบไม่เคยมาจากช่องทางเดียว ทั้งโฆษณาต่างประเทศ ค่าบริการ SaaS ค่าสินค้าจากซัพพลายเออร์ และค่าเดินทางของพนักงาน ผู้รับเงินและสกุลเงินต่างกันไปหมด และการกระทบยอดมักกินเวลามากกว่าการจ่ายเงินเสียอีก
+
+เรารวมทั้งหมดนี้ไว้ในระบบหลังบ้านเดียว:
+
+- **ออกบัตรจำนวนมาก** —— ออกบัตรแยกตามแผนก ตามโปรเจกต์ หรือตามบัญชีโฆษณา วงเงินแยกอิสระและค่าใช้จ่ายแยกกันเองโดยธรรมชาติ สิ้นเดือนจึงไม่ต้องไล่ย้อนจากใบแจ้งยอดอีก
+- **ชำระหลายสกุลเงิน** —— ชำระตรงด้วยดอลลาร์สหรัฐ ยูโร ดอลลาร์ฮ่องกง และสกุลเงินหลักอื่น ๆ ลดการสูญเสียจากการแลกไปแลกมา
+- **เชื่อมต่อ API** —— การออกบัตร เติมเงิน และตรวจสอบรายการ เชื่อมเข้าระบบของคุณเองได้ทั้งหมด ฝ่ายการเงินไม่ต้องย้ายข้อมูลด้วยมือ
+- **รวมบันทึกการจ่ายเงินไว้ที่เดียว** —— ทุกรายจ่ายผูกกับบุคคลและโปรเจกต์ ตรวจสอบสถานะได้ และการคืนเงินหรือปรับปรุงรายการก็มีร่องรอยชัดเจน
+
+ร้านค้า ทีมซื้อสื่อโฆษณา และอีคอมเมิร์ซข้ามพรมแดน คือกลุ่มที่เราทำงานด้วยมากที่สุด
+
+ต้องการเปิดใช้งานหรืออยากคุยเรื่องการเชื่อมต่อก่อน，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.th.menu.main]]
+    identifier = 'posts'
+    name = "บทความ"
+    url = '/posts/'
+    weight = 10
+  [[languages.th.menu.main]]
+    identifier = 'archives'
+    name = "คลังบทความ"
+    url = '/archives/'
+    weight = 20
+  [[languages.th.menu.main]]
+    identifier = 'categories'
+    name = "หมวดหมู่"
+    url = '/categories/'
+    weight = 30
+  [[languages.th.menu.main]]
+    identifier = 'tags'
+    name = "แท็ก"
+    url = '/tags/'
+    weight = 40
+  [[languages.th.menu.main]]
+    identifier = 'search'
+    name = "ค้นหา"
+    url = '/search/'
+    weight = 50
+
+# ══ Tiếng Việt (vi) · 东南亚 ═══════════════════════
+[languages.vi]
+  locale = "vi"
+  label = "Tiếng Việt"
+  contentDir = 'content/vi'
+  weight = 16
+  title = "coinepaymc"
+
+  [languages.vi.params]
+    description = "Coinepay · Thu chi xuyên biên giới cho doanh nghiệp"
+    keywords = ["企业虚拟卡", "批量开卡", "API对接", "跨境结算", "Coinepay"]
+    langGroup = "sea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.vi.params.homeInfoParams]
+      Title = "Coinepay · Thu chi xuyên biên giới cho doanh nghiệp"
+      Content = '''
+Chi tiêu ở nước ngoài của doanh nghiệp hiếm khi chỉ đến từ một kênh. Quảng cáo quốc tế, thuê bao SaaS, hóa đơn nhà cung cấp, công tác phí — người nhận và loại tiền khác nhau, còn việc đối soát thường tốn thời gian hơn cả bản thân việc thanh toán.
+
+Chúng tôi gom tất cả vào cùng một hệ thống quản trị:
+
+- **Phát hành thẻ hàng loạt** —— Mở thẻ riêng theo phòng ban, theo dự án hoặc theo tài khoản quảng cáo. Hạn mức độc lập, chi phí tự tách ra, nên cuối tháng không còn phải lần ngược từ sao kê.
+- **Thanh toán đa tiền tệ** —— Thanh toán trực tiếp bằng USD, EUR, HKD và các loại tiền phổ biến khác, giảm hao hụt do đổi tiền qua lại.
+- **Kết nối API** —— Mở thẻ, nạp tiền và tra cứu giao dịch đều có thể nối thẳng vào hệ thống của bạn, để bộ phận tài chính thôi phải chuyển dữ liệu bằng tay.
+- **Gom hồ sơ thanh toán về một nơi** —— Mỗi khoản chi gắn với một người và một dự án, tra được tiến độ, hoàn tiền và điều chỉnh cũng để lại dấu vết.
+
+Thương nhân, đội mua quảng cáo và thương mại điện tử xuyên biên giới là nhóm chúng tôi phục vụ nhiều nhất.
+
+Cần mở tài khoản hoặc muốn trao đổi trước về cách tích hợp，**Telegram [@coinepaymm](https://t.me/coinepaymm)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.vi.menu.main]]
+    identifier = 'posts'
+    name = "Bài viết"
+    url = '/posts/'
+    weight = 10
+  [[languages.vi.menu.main]]
+    identifier = 'archives'
+    name = "Lưu trữ"
+    url = '/archives/'
+    weight = 20
+  [[languages.vi.menu.main]]
+    identifier = 'categories'
+    name = "Chuyên mục"
+    url = '/categories/'
+    weight = 30
+  [[languages.vi.menu.main]]
+    identifier = 'tags'
+    name = "Thẻ"
+    url = '/tags/'
+    weight = 40
+  [[languages.vi.menu.main]]
+    identifier = 'search'
+    name = "Tìm kiếm"
+    url = '/search/'
+    weight = 50
 
 [markup.highlight]
   noClasses = false

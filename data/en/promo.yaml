@@ -1,0 +1,46 @@
+# English —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsored"
+
+card:
+  title: "Coinepay corporate cards · A card per project, costs sorted automatically"
+  body: "Issue a separate card for each department, each media-buying line, each supplier. Limits stay independent and transactions separate themselves, so month-end no longer means working backwards through a pile of statements. Settle in USD, EUR, HKD and other currencies, and wire issuance, top-ups and transaction lookups into your own systems through the API."
+  cta:
+    label: "Open a business account →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "Integration and onboarding"
+  body: "Bulk issuance, API integration, reconciliation rules — someone stays with it until it works."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Live support"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Open the card platform"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Merchants running volume: bring TRC20 fees down"
+  points:
+    - "Every USDT-TRC20 transfer burns <b>13–27 TRX</b> when energy runs short. It depends on the number of transfers, not the amount — which makes it a standing cost for any merchant running volume."
+    - "With rented energy that falls to <b>1.5–1.7 TRX</b> per transfer when the recipient already holds USDT; a first transfer into an empty address needs 130,000 energy, about <b>3.0–3.4 TRX</b>."
+    - "Exchanges and payment merchants can connect the API and rent per transfer automatically, with nothing to watch manually."
+    - "No registration needed: send TRX to the platform address and the energy is delegated back to the paying address."
+  cta:
+    label: "Integrate the rental API"
+    url: "https://login.trxapi.io/energy"

@@ -1,0 +1,46 @@
+# 日本語 —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "PR"
+
+card:
+  title: "Coinepay 法人カード · プロジェクトごとにカードを分け、費用は自動で仕分け"
+  body: "部門ごと、広告出稿ラインごと、仕入先ごとにカードを分けて発行できます。限度額は独立し、取引は自然に分かれるため、月末に大量の請求書から遡る作業がなくなります。米ドル・ユーロ・香港ドルなどで決済でき、発行・チャージ・取引照会は API で自社システムに接続できます。"
+  cta:
+    label: "法人アカウントを開設 →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "導入と連携のご相談"
+  body: "一括発行、API 連携、消込の基準まで、担当者が最後までお付き合いします。"
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "オンラインサポート"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "カード発行プラットフォームへ"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "取引量の多い加盟店へ：TRC20 の手数料を下げる"
+  points:
+    - "エナジーが不足していると、USDT-TRC20 の送金 1 回につき <b>13〜27 TRX</b> を消費します。金額ではなく件数で決まるため、取引量の多い加盟店にとっては継続的なコストになります。"
+    - "エナジーをレンタルすれば、受取側が既に USDT を保有している場合は 1 件あたり <b>1.5〜1.7 TRX</b> まで下がります。空アドレスへの初回送金には 130,000 エナジー、約 <b>3.0〜3.4 TRX</b> が必要です。"
+    - "取引所や決済加盟店は API を接続し、送金ごとに自動レンタルできます。人が張り付く必要はありません。"
+    - "登録不要：TRX をプラットフォームの受取アドレスへ送ると、エナジーが支払元アドレスへ委任されます。"
+  cta:
+    label: "レンタル API を接続する"
+    url: "https://login.trxapi.io/energy"

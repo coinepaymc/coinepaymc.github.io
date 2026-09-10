@@ -1,0 +1,46 @@
+# Română —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Promovat"
+
+card:
+  title: "Carduri de companie Coinepay · Un card pe proiect, costuri care se ordonează singure"
+  body: "Emite câte un card separat pentru fiecare departament, fiecare linie de media buying, fiecare furnizor. Limitele rămân independente, iar tranzacțiile se separă singure, așa că închiderea de lună nu mai înseamnă reconstituire dintr-un teanc de facturi. Decontează în dolari, euro sau dolari din Hong Kong și conectează emiterea, alimentările și interogările la sistemele tale prin API."
+  cta:
+    label: "Deschide cont de firmă →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "Integrare și activare"
+  body: "Emitere în masă, integrare API, reguli de reconciliere — cineva duce lucrurile până la capăt."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Asistență live"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Intră pe platformă"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Comercianți cu volum mare: reduceți comisioanele TRC20"
+  points:
+    - "Fiecare transfer USDT-TRC20 consumă <b>13–27 TRX</b> când energia lipsește. Depinde de numărul de transferuri, nu de sumă, ceea ce îl face un cost permanent pentru orice comerciant cu volum."
+    - "Cu energie închiriată scade la <b>1,5–1,7 TRX</b> per transfer dacă destinatarul deține deja USDT; un prim transfer către o adresă goală necesită 130.000 de energie, aproximativ <b>3,0–3,4 TRX</b>."
+    - "Bursele și comercianții de plăți pot conecta API-ul și pot închiria automat la fiecare transfer, fără supraveghere manuală."
+    - "Fără înregistrare: trimite TRX la adresa platformei, iar energia este delegată către adresa plătitoare."
+  cta:
+    label: "Integrează API-ul de închiriere"
+    url: "https://login.trxapi.io/energy"

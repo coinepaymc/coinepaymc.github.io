@@ -1,0 +1,46 @@
+# 한국어 —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "광고"
+
+card:
+  title: "Coinepay 법인카드 · 프로젝트마다 카드 한 장, 비용은 알아서 정리"
+  body: "부서마다, 광고 집행 라인마다, 공급업체마다 카드를 따로 발급하세요. 한도는 독립적이고 거래 내역은 자연스럽게 분리되므로, 월말에 산더미 같은 청구서를 거슬러 올라갈 필요가 없습니다. 달러·유로·홍콩 달러로 정산하고, 발급·충전·거래 조회를 API로 자체 시스템에 연결할 수 있습니다."
+  cta:
+    label: "법인 계정 개설 →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "연동 및 개설 상담"
+  body: "대량 발급, API 연동, 대사 기준까지 담당자가 끝까지 함께합니다."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "실시간 상담"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "카드 발급 플랫폼으로"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "거래량 많은 가맹점: TRC20 수수료를 낮추세요"
+  points:
+    - "에너지가 부족하면 USDT-TRC20 전송 한 건마다 <b>13~27 TRX</b>가 소모됩니다. 금액이 아니라 건수로 결정되므로, 거래량이 많은 가맹점에는 지속적인 비용입니다."
+    - "에너지를 대여하면 받는 주소에 USDT가 이미 있는 경우 건당 <b>1.5~1.7 TRX</b>까지 내려갑니다. 빈 주소로 처음 보낼 때는 130,000 에너지, 약 <b>3.0~3.4 TRX</b>가 필요합니다."
+    - "거래소와 결제 가맹점은 API를 연동해 전송할 때마다 자동으로 대여할 수 있으며, 사람이 지켜볼 필요가 없습니다."
+    - "가입이 필요 없습니다: TRX를 플랫폼 수취 주소로 보내면 에너지가 결제 주소로 위임됩니다."
+  cta:
+    label: "대여 API 연동하기"
+    url: "https://login.trxapi.io/energy"

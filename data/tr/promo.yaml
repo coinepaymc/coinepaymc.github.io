@@ -1,0 +1,46 @@
+# Türkçe —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsorlu"
+
+card:
+  title: "Coinepay kurumsal kartları · Projeye bir kart, maliyetler kendiliğinden ayrışır"
+  body: "Her departman, her medya satın alma hattı, her tedarikçi için ayrı bir kart çıkarın. Limitler bağımsız kalır, hareketler kendiliğinden ayrışır; ay sonu artık bir yığın faturadan geriye iz sürmek değildir. Dolar, euro veya Hong Kong doları ile mutabakat yapın; kart basımını, yüklemeyi ve işlem sorgulamayı API ile kendi sistemlerinize bağlayın."
+  cta:
+    label: "Kurumsal hesap açın →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "Entegrasyon ve başlangıç"
+  body: "Toplu kart basımı, API entegrasyonu, mutabakat kuralları —— biri işi sonuna kadar takip eder."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Canlı destek"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Platforma git"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Yoğun hacimli işletmeler: TRC20 ücretlerini düşürün"
+  points:
+    - "Enerji yetersizken her USDT-TRC20 transferi <b>13–27 TRX</b> yakar. Tutara değil transfer sayısına bağlıdır; bu da hacimli çalışan her işletme için kalıcı bir maliyettir."
+    - "Kiralanan enerjiyle bu, alıcıda zaten USDT varsa transfer başına <b>1,5–1,7 TRX</b>’e iner; boş bir adrese ilk transfer 130.000 enerji, yani yaklaşık <b>3,0–3,4 TRX</b> gerektirir."
+    - "Borsalar ve ödeme işletmeleri API’yi bağlayıp her transferde otomatik kiralayabilir, elle takip gerekmez."
+    - "Kayıt gerekmez: TRX’i platform adresine gönderin, enerji ödeme yapan adrese devredilsin."
+  cta:
+    label: "Kiralama API’sini entegre et"
+    url: "https://login.trxapi.io/energy"

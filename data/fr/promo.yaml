@@ -1,0 +1,46 @@
+# Français —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsorisé"
+
+card:
+  title: "Cartes entreprise Coinepay · Une carte par projet, des coûts qui se classent seuls"
+  body: "Créez une carte distincte pour chaque service, chaque ligne d’achat média, chaque fournisseur. Les plafonds restent indépendants et les mouvements se séparent d’eux-mêmes : la clôture mensuelle n’est plus une reconstitution à partir d’une pile de factures. Réglez en dollars, en euros ou en dollars de Hong Kong, et raccordez émission, recharges et consultations à vos systèmes via l’API."
+  cta:
+    label: "Ouvrir un compte entreprise →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "Intégration et ouverture"
+  body: "Émission en masse, intégration API, règles de rapprochement : quelqu’un suit le dossier jusqu’au bout."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Assistance en direct"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Accéder à la plateforme"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Marchands à fort volume : faites baisser les frais TRC20"
+  points:
+    - "Chaque transfert USDT-TRC20 consomme <b>13 à 27 TRX</b> quand l’énergie manque. Cela dépend du nombre de transferts et non du montant, ce qui en fait un coût permanent pour tout marchand à fort volume."
+    - "Avec de l’énergie louée, cela tombe à <b>1,5–1,7 TRX</b> par transfert si le destinataire détient déjà des USDT ; un premier transfert vers une adresse vide demande 130 000 d’énergie, soit environ <b>3,0–3,4 TRX</b>."
+    - "Les plateformes d’échange et les marchands peuvent raccorder l’API et louer automatiquement à chaque transfert, sans surveillance manuelle."
+    - "Sans inscription : envoyez des TRX à l’adresse de la plateforme et l’énergie est déléguée à l’adresse payeuse."
+  cta:
+    label: "Intégrer l’API de location"
+    url: "https://login.trxapi.io/energy"

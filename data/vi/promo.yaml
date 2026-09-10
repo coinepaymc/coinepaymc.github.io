@@ -1,0 +1,46 @@
+# Tiếng Việt —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Tài trợ"
+
+card:
+  title: "Thẻ doanh nghiệp Coinepay · Mỗi dự án một thẻ, chi phí tự vào đúng chỗ"
+  body: "Mở thẻ riêng cho từng phòng ban, từng luồng chạy quảng cáo, từng nhà cung cấp. Hạn mức độc lập, giao dịch tự tách ra, nên cuối tháng không còn phải lần ngược qua một chồng hóa đơn. Thanh toán bằng USD, EUR hay HKD, và nối việc mở thẻ, nạp tiền, tra cứu giao dịch vào hệ thống của bạn qua API."
+  cta:
+    label: "Mở tài khoản doanh nghiệp →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "Tích hợp và kích hoạt"
+  body: "Mở thẻ hàng loạt, kết nối API, quy tắc đối soát — luôn có người theo tới cùng."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Hỗ trợ trực tuyến"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Vào nền tảng mở thẻ"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Thương nhân giao dịch nhiều: kéo phí TRC20 xuống"
+  points:
+    - "Mỗi giao dịch USDT-TRC20 đốt <b>13–27 TRX</b> khi thiếu năng lượng. Nó phụ thuộc số lần chuyển chứ không phải số tiền, nên với thương nhân chạy khối lượng lớn đây là chi phí thường trực."
+    - "Khi thuê năng lượng, con số này giảm còn <b>1,5–1,7 TRX</b> mỗi giao dịch nếu địa chỉ nhận đã có USDT; lần chuyển đầu tiên vào địa chỉ trống cần 130.000 năng lượng, khoảng <b>3,0–3,4 TRX</b>."
+    - "Sàn giao dịch và thương nhân thanh toán có thể kết nối API để thuê tự động theo từng giao dịch, không cần ai ngồi canh."
+    - "Không cần đăng ký: chuyển TRX tới địa chỉ nhận của nền tảng, năng lượng sẽ được ủy quyền về địa chỉ chi trả."
+  cta:
+    label: "Kết nối API thuê năng lượng"
+    url: "https://login.trxapi.io/energy"

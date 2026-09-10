@@ -1,0 +1,46 @@
+# Português —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Patrocinado"
+
+card:
+  title: "Cartões corporativos Coinepay · Um cartão por projeto, custos organizados sozinhos"
+  body: "Crie um cartão distinto para cada departamento, cada linha de mídia, cada fornecedor. Os limites permanecem independentes e os lançamentos se separam sozinhos, então o fechamento do mês deixa de ser uma reconstrução a partir de uma pilha de faturas. Liquide em dólar, euro ou dólar de Hong Kong, e conecte emissão, recargas e consultas aos seus sistemas pela API."
+  cta:
+    label: "Abrir conta empresarial →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "Integração e abertura"
+  body: "Emissão em massa, integração por API, critérios de conciliação: alguém acompanha até o fim."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Suporte ao vivo"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Acessar a plataforma"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Comerciantes com volume: reduza as taxas de TRC20"
+  points:
+    - "Cada transferência de USDT-TRC20 queima <b>13–27 TRX</b> quando falta energia. Depende da quantidade de transferências, não do valor, o que a torna um custo permanente para qualquer comerciante com volume."
+    - "Com energia alugada isso cai para <b>1,5–1,7 TRX</b> por transferência quando o destinatário já possui USDT; uma primeira transferência para um endereço vazio exige 130.000 de energia, cerca de <b>3,0–3,4 TRX</b>."
+    - "Exchanges e comerciantes de pagamento podem conectar a API e alugar por transferência automaticamente, sem acompanhamento manual."
+    - "Sem cadastro: envie TRX ao endereço da plataforma e a energia é delegada ao endereço pagador."
+  cta:
+    label: "Integrar a API de aluguel"
+    url: "https://login.trxapi.io/energy"

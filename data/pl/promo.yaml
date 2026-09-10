@@ -1,0 +1,46 @@
+# Polski —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsorowane"
+
+card:
+  title: "Karty firmowe Coinepay · Karta na projekt, koszty porządkują się same"
+  body: "Wydaj osobną kartę dla każdego działu, każdej linii zakupu mediów, każdego dostawcy. Limity pozostają niezależne, a transakcje rozdzielają się same, więc zamknięcie miesiąca przestaje być odtwarzaniem historii ze stosu faktur. Rozliczaj w dolarach, euro czy dolarach hongkońskich, a wydawanie kart, doładowania i podgląd transakcji wepnij we własne systemy przez API."
+  cta:
+    label: "Załóż konto firmowe →"
+    url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+
+contact:
+  title: "Integracja i uruchomienie"
+  body: "Masowe wydawanie kart, integracja API, zasady uzgadniania — ktoś prowadzi temat do końca."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepaymm"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Czat na żywo"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Przejdź do platformy"
+      url: "https://www.coinepay.net/login?referrer=7PFFZMCH"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Sprzedawcy z dużym wolumenem: obniż opłaty TRC20"
+  points:
+    - "Każdy przelew USDT-TRC20 spala <b>13–27 TRX</b>, gdy brakuje energii. Zależy to od liczby przelewów, a nie od kwoty, więc dla sprzedawcy z dużym wolumenem jest to koszt stały."
+    - "Z wynajętą energią spada to do <b>1,5–1,7 TRX</b> za przelew, gdy odbiorca ma już USDT; pierwszy przelew na pusty adres wymaga 130 000 energii, około <b>3,0–3,4 TRX</b>."
+    - "Giełdy i sprzedawcy płatności mogą podłączyć API i wynajmować automatycznie przy każdym przelewie, bez ręcznego nadzoru."
+    - "Bez rejestracji: wyślij TRX na adres platformy, a energia zostanie delegowana na adres płatnika."
+  cta:
+    label: "Podłącz API wynajmu"
+    url: "https://login.trxapi.io/energy"
