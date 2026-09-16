@@ -1,6 +1,6 @@
 ---
 title: "TRX Energy Rental Guide: Reduce TRON Transaction Fees"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
