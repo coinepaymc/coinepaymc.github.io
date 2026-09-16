@@ -1,6 +1,6 @@
 ---
 title: "Przewodnik po TRX Energy: zmniejsz opłaty w sieci TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
