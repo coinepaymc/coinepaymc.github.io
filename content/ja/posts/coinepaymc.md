@@ -1,6 +1,6 @@
 ---
 title: TRX Energyガイド：TRONネットワークの手数料を削減する方法
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
