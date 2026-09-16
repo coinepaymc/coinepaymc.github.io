@@ -1,6 +1,6 @@
 ---
 title: "Guía de TRX Energy: reduce las comisiones en la red TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
