@@ -1,6 +1,6 @@
 ---
 title: "Ghid TRX Energy: reduce comisioanele pe rețeaua TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
