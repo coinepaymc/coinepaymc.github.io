@@ -1,6 +1,6 @@
 ---
 title: "دليل TRX Energy: تقليل رسوم المعاملات على شبكة TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
