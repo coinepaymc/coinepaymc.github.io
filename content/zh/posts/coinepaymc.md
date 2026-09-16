@@ -1,6 +1,6 @@
 ---
 title: ChatGPT Plus虚拟卡订阅推荐Coinepay虚拟卡平台
-slug: coinepaymc
+slug: coinepaym
 date: 2026-09-15
 draft: false
 ---
