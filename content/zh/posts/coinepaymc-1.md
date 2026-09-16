@@ -1,6 +1,6 @@
 ---
 title: TRON 网络手续费优化指南：为什么越来越多用户选择 TRX 能量租赁
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
