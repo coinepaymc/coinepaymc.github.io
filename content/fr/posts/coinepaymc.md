@@ -1,6 +1,6 @@
 ---
 title: "Guide TRX Energy : réduire les frais sur le réseau TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
