@@ -1,6 +1,6 @@
 ---
 title: "TRX Energy 가이드: TRON 네트워크 수수료 줄이는 방법"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
