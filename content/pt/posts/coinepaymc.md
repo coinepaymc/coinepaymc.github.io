@@ -1,6 +1,6 @@
 ---
 title: "Guia de TRX Energy: reduza as taxas na rede TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
