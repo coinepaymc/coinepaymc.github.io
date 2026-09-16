@@ -1,6 +1,6 @@
 ---
 title: "คู่มือ TRX Energy: ลดค่าธรรมเนียมธุรกรรมบนเครือข่าย TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
