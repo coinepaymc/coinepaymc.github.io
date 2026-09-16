@@ -1,6 +1,6 @@
 ---
 title: "Hướng dẫn TRX Energy: Giảm phí giao dịch trên mạng TRON"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
