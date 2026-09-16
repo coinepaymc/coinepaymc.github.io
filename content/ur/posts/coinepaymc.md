@@ -1,6 +1,6 @@
 ---
 title: "TRX Energy گائیڈ: TRON نیٹ ورک پر ٹرانزیکشن فیس کم کرنے کا طریقہ"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
