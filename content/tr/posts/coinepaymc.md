@@ -1,6 +1,6 @@
 ---
 title: "TRX Energy Rehberi: TRON Ağında İşlem Ücretlerini Azaltın"
-slug: coinepaymc
+slug: trx
 date: 2026-09-16
 draft: false
 ---
