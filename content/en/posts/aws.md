@@ -4,46 +4,6 @@ slug: aws
 date: 2026-09-22
 draft: false
 ---
-### GitHub 英文标题优化
-
-原标题：
-
-> AWS云服务器怎么付费？亚马逊云AWS账户注册、信用卡支付与使用方法
-
-不建议直接翻译，因为 GitHub 用户更习惯简洁、搜索型标题。
-
-推荐标题：
-
-**How to Pay for AWS Cloud Services**
-
-中文：
-
-> 如何支付 AWS 云服务
-
-优点：
-
-- 简短自然；
-- 包含 AWS、Cloud、Payment 核心关键词；
-- 符合海外用户搜索习惯；
-- 适合 GitHub Pages / README。
-
-其他可选标题：
-
-1. **AWS Payment Guide: Billing and Card Setup**  
-（偏 Billing 搜索）
-2. **How to Pay for AWS with a Card**  
-（偏信用卡支付搜索）
-3. **AWS Billing: Payment Methods Explained**  
-（偏开发者文档风格）
-4. **AWS Cloud Payment with Virtual Card**  
-（偏虚拟信用卡流量）
-
-推荐最终使用：
-
-> **How to Pay for AWS Cloud Services**
-
----
-
 # How to Pay for AWS Cloud Services
 
 With the rapid growth of cloud computing, artificial intelligence, big data, and digital services, more developers, startups, and businesses are using cloud platforms to deploy applications, store data, and build online services.
