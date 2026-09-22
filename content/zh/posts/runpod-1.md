@@ -1,6 +1,6 @@
 ---
 title: AWS云服务器怎么付费？亚马逊云AWS账户注册、信用卡支付与使用方法
-slug: runpod
+slug: aws
 date: 2026-09-22
 draft: false
 ---
