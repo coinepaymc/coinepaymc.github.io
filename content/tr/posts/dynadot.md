@@ -4,7 +4,7 @@ slug: dynadot
 date: 2026-10-12
 draft: false
 ---
-# Dynadot Ödeme Rehberi: Alan Adı Kaydı 
+# Dynadot Ödeme Rehberi: Alan Adı Kaydı
 
 Küresel internet işletmelerinin gelişmesiyle birlikte alan adları; şirketler, bağımsız mağaza sahipleri, geliştiriciler ve kişisel markalar için önemli dijital varlıklar haline gelmiştir.
 
