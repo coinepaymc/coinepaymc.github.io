@@ -1,6 +1,6 @@
 ---
 title: How to Pay for DistroKid Services with a Virtual Credit Card
-slug: tunecore
+slug: distrokid
 date: 2026-10-14
 draft: false
 ---
