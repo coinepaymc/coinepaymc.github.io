@@ -1,6 +1,6 @@
 ---
 title: 如何使用虚拟信用卡支付 DistroKid 服务
-slug: tunecore
+slug: distrokid
 date: 2026-10-14
 draft: false
 ---
