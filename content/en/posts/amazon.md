@@ -1,5 +1,5 @@
 ---
-title: How to Pay on Amazon? We Recommend the CoinePay Virtual Credit Card.
+title: How to Pay for Amazon Orders？
 slug: amazon
 date: 2026-10-21
 draft: false
