@@ -1,6 +1,5 @@
 ---
-title: "How to Pay on Alibaba.com with a Virtual Credit Card: Payment Failures
-  and Solutions"
+title: How to Pay on Alibaba.com with a Virtual Card
 slug: alibaba
 date: 2026-10-20
 draft: false
