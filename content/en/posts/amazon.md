@@ -1,5 +1,5 @@
 ---
-title: How to Pay for Amazon Orders？
+title: "Amazon Payment Methods: How to Pay"
 slug: amazon
 date: 2026-10-21
 draft: false
