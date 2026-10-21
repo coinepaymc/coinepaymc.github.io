@@ -1,6 +1,5 @@
 ---
-title: "DHgate Virtual Credit Card Payment Guide: How to Buy Products and Fix
-  Payment Failures"
+title: DHgate Virtual Card Payment Guide
 slug: dhgate
 date: 2026-10-19
 draft: false
