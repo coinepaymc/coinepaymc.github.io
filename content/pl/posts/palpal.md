@@ -1,6 +1,6 @@
 ---
 title: Jak korzystać z wirtualnej karty CoinePay w PayPal?
-slug: palpal
+slug: paypal
 date: 2026-10-22
 draft: false
 ---
