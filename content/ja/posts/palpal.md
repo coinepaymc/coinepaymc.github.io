@@ -1,6 +1,6 @@
 ---
 title: PayPalでCoinePayバーチャルカードを使う方法
-slug: palpal
+slug: paypal
 date: 2026-10-22
 draft: false
 ---
