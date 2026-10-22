@@ -1,6 +1,6 @@
 ---
 title: CoinePay虚拟卡-PayPal绑定虚拟卡完整教程
-slug: palpal
+slug: paypal
 date: 2026-10-22
 draft: false
 ---
