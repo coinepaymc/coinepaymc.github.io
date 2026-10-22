@@ -1,6 +1,6 @@
 ---
 title: PayPal पर CoinePay वर्चुअल कार्ड का उपयोग कैसे करें
-slug: palpal
+slug: paypal
 date: 2026-10-22
 draft: false
 ---
