@@ -1,6 +1,6 @@
 ---
 title: PayPal ile CoinePay Sanal Kart Nasıl Kullanılır?
-slug: palpal
+slug: paypal
 date: 2026-10-22
 draft: false
 ---
