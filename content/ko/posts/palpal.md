@@ -1,6 +1,6 @@
 ---
 title: PayPal에서 CoinePay 가상카드 사용하는 방법
-slug: palpal
+slug: paypal
 date: 2026-10-22
 draft: false
 ---
