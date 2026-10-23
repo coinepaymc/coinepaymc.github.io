@@ -1,5 +1,5 @@
 ---
-title: 如何使用Coinepay虚拟卡在Etsy上购物
+title: 如何使用Coinepay虚拟卡在Etsy上购物及失败原因解析
 slug: etsy
 date: 2026-10-23
 draft: false
